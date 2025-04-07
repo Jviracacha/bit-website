@@ -26,7 +26,9 @@ h1 {
 }
 
 main {
-  width: 75%;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 aside {
@@ -36,6 +38,9 @@ aside {
 /* CLASSES */
 .box {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
 }
 
 .text-center {
@@ -56,23 +61,51 @@ th, td {
 .s-first {
   background-image: linear-gradient(#2c3e50, #1f1f1f);
   border-radius: 0 20px 0 0;
-  padding: 20px;
+  padding: 100px 40px 40px 40px; /* Más espacio arriba */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .photo {
-  text-align: center;
+  flex: 0 0 auto;
 }
 
 .s-first img {
   border-radius: 50%;
-  width: 200px;
+  width: 250px;
   height: auto;
+}
+
+.s-first .text {
+  flex: 2;
+  font-size: 1.2rem; /* Texto más grande */
+  margin-top: 60px; /* Más espacio superior */
+  line-height: 1.8; /* Más espaciado entre líneas */
+}
+
+.gif-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  margin-top: 0; /* Subido para alinear con el texto */
+}
+
+.gif-area img {
+  width: 100%;
+  max-width: 1000px; /* Más largo */
+  height: 700px;
+  border-radius: 10px;
 }
 
 /* MENU */
 .menu {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 20px;
   text-transform: uppercase;
   background-color: #2c3e50;
@@ -82,11 +115,15 @@ th, td {
 .menu a {
   color: #f4f4f4;
   text-decoration: none;
-  transition: color 0.3s;
+  padding: 8px 12px;
+  border: 1px solid #2ecc71;
+  border-radius: 5px;
+  transition: all 0.3s;
 }
 
 .menu a:hover {
   color: #2ecc71;
+  background-color: #34495e;
 }
 
 /* FOOTER */
