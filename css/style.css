@@ -1,4 +1,4 @@
-/* GLOBALS */
+
 * {
   box-sizing: border-box;
 }
@@ -61,7 +61,7 @@ th, td {
 .s-first {
   background-image: linear-gradient(#2c3e50, #1f1f1f);
   border-radius: 0 20px 0 0;
-  padding: 100px 40px 40px 40px; /* Más espacio arriba */
+  padding: 100px 40px 40px 40px; 
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -81,9 +81,9 @@ th, td {
 
 .s-first .text {
   flex: 2;
-  font-size: 1.2rem; /* Texto más grande */
-  margin-top: 60px; /* Más espacio superior */
-  line-height: 1.8; /* Más espaciado entre líneas */
+  font-size: 1.2rem; 
+  margin-top: 60px; 
+  line-height: 1.8; 
 }
 
 .gif-area {
@@ -92,12 +92,12 @@ th, td {
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
-  margin-top: 0; /* Subido para alinear con el texto */
+  margin-top: 0; 
 }
 
 .gif-area img {
   width: 100%;
-  max-width: 1000px; /* Más largo */
+  max-width: 1000px; 
   height: 700px;
   border-radius: 10px;
 }
