@@ -38,7 +38,7 @@ main {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  
+  background-image: url('../assets/imagen_head2.jpg');
 }
 
 aside {
